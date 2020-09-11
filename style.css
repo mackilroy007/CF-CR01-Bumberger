@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     }
 header{
     background-color: aqua;
@@ -30,11 +31,38 @@ nav > ul, li{ /*only to the ul an li within nav*/
     float: right;
     padding-right: 3em;
     font-size: 1.2em;   /*incresing the font size */
-
+    font-weight: bold;
 }
 nav{
     border: 1px solid black;    /*displayed a box for the list content to be held in*/
     background-color: blueviolet;
     height: 2em;
     width: auto;
+}
+#article-header{    /*contains the large main text defining it's properties*/
+    text-align: center; 
+    font-size: 3em;
+    font-weight: bold;
+}
+#feature{
+    border: 1px solid black;    /*parent container of feature image and the h3 element*/
+    background-color: green;
+    overflow: hidden;
+    
+}
+.feature-img{ /*image is clipped by its parent element and its excessive content hidden*/
+    background-color: #333;
+    position: relative;
+    height: 15em;
+    width: auto;
+    margin-left: 5em;
+    margin-right: 5em;
+    overflow: hidden;   /*hide clipped content*/
+    border: solid red;
+}
+.feature-img-clipped{ /*clipped image is reposisioned to the center by defining position relative*/
+    position: relative;
+    scale: 80%; /*image has to be scaled down to able to see main content*/
+    top: -100%; /*the position center is not the desired final position. It needs to be manipulated*/
+    left: -20%;
 }
