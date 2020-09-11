@@ -24,3 +24,17 @@ header{
     top: 1em;
     right: 5%;
 }
+nav > ul, li{ /*only to the ul an li within nav*/
+    list-style-type: none; /*removing the bulletpoints of the ul within the nav folder*/
+    display: inline;    /*changing the list into an inline function*/
+    float: right;
+    padding-right: 3em;
+    font-size: 1.2em;   /*incresing the font size */
+
+}
+nav{
+    border: 1px solid black;    /*displayed a box for the list content to be held in*/
+    background-color: blueviolet;
+    height: 2em;
+    width: auto;
+}
