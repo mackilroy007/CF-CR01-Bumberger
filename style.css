@@ -1,0 +1,26 @@
+* {/*this is our css reset*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+header{
+    background-color: aqua;
+    height: 10em;
+    width: auto;
+    top: 0em;
+}
+#header-txt {
+    position: absolute;
+    top: 3em;               /*fixed the position of the headers text left and 10% of the left border*/
+    text-align: left;
+    border: 1px solid black;
+    margin-left: 10%;
+    background-color: lightblue;
+        }
+#header-img{
+    position: absolute; /*forcing the logo image to stay at the top right corner*/
+    height: auto;
+    width: 20em;    /*it will adapt with differnt page sizes*/
+    top: 1em;
+    right: 5%;
+}
