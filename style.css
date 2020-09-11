@@ -10,7 +10,7 @@ header{
     width: auto;
     top: 0em;
 }
-#header-txt {
+.header-txt {
     position: absolute;
     top: 3em;               /*fixed the position of the headers text left and 10% of the left border*/
     text-align: left;
@@ -18,7 +18,7 @@ header{
     margin-left: 10%;
     background-color: lightblue;
         }
-#header-img{
+.header-img{
     position: absolute; /*forcing the logo image to stay at the top right corner*/
     height: auto;
     width: 20em;    /*it will adapt with differnt page sizes*/
@@ -39,12 +39,12 @@ nav{
     height: 2em;
     width: auto;
 }
-#article-header{    /*contains the large main text defining it's properties*/
+.article-header{    /*contains the large main text defining it's properties*/
     text-align: center; 
     font-size: 3em;
     font-weight: bold;
 }
-#feature{
+.feature{
     border: 1px solid black;    /*parent container of feature image and the h3 element*/
     background-color: green;
     overflow: hidden;
@@ -65,4 +65,36 @@ nav{
     scale: 80%; /*image has to be scaled down to able to see main content*/
     top: -100%; /*the position center is not the desired final position. It needs to be manipulated*/
     left: -20%;
+}
+.rows{
+    position: absolute; /*placing the footer at the bottom 0*/
+    width: 100%; 
+}
+.column{
+    border: 0.2em solid blue;
+    float: left;    /*creating columns from left to right*/
+    padding: 0.5em;
+    width: 48%;     /*as there are 2 columns we want to split the space evenly*/
+    height: auto;  /*defining the column size. it will change with differnt size*/
+    background-color:red;
+    
+}
+.column-img1{/*the first column image parts which is clipped away will be hidden*/
+    overflow: hidden;
+
+}
+.column-img1-clipped{/*image settings*/
+    background-color: #333;
+    width: 25em;
+    height: auto;
+    border-radius: 5px;
+}
+.column-img2{
+    overflow: hidden;
+}
+.column-img2-clipped{/*image settings*/
+    background-color: #333;
+    width: 25em;
+    height: auto;
+    border-radius: 5px;
 }
