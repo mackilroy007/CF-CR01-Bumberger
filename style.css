@@ -1,10 +1,15 @@
 * {/*this is our css reset*/
-    margin: 0;
+    margin: auto;
     padding: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     }
-header{
+body{                           /*defining body size for the perminent placement of the footer*/
+    position: relative;
+    min-height: 70em;
+    padding-bottom: 8rem;    /* Footer height */
+}
+header{                         /*header dimensions need to be defined so that we can display the image within it*/
     background-color: aqua;
     height: 10em;
     width: auto;
@@ -12,34 +17,34 @@ header{
 }
 .header-txt {
     position: absolute;
-    top: 3em;               /*fixed the position of the headers text left and 10% of the left border*/
+    top: 3em;                   /*fixed the position of the headers text left and 10% of the left border*/
     text-align: left;
     border: 1px solid black;
     margin-left: 10%;
     background-color: lightblue;
         }
-.header-img{
-    position: absolute; /*forcing the logo image to stay at the top right corner*/
+.header-img{                    /*the image will only display within the header*/
+    position: absolute;         /*forcing the logo image to stay at the top right corner*/
     height: auto;
-    width: 20em;    /*it will adapt with differnt page sizes*/
+    width: 20em;                /*it will adapt with differnt page sizes*/
     top: 1em;
     right: 5%;
 }
-nav > ul, li{ /*only to the ul an li within nav*/
-    list-style-type: none; /*removing the bulletpoints of the ul within the nav folder*/
-    display: inline;    /*changing the list into an inline function*/
+nav > ul, li{                   /*only to the ul an li within nav*/
+    list-style-type: none;      /*removing the bulletpoints of the ul within the nav folder*/
+    display: inline;            /*changing the list into an inline function*/
     float: right;
     padding-right: 3em;
-    font-size: 1.2em;   /*incresing the font size */
+    font-size: 1.2em;               /*incresing the font size */
     font-weight: bold;
 }
 nav{
-    border: 1px solid black;    /*displayed a box for the list content to be held in*/
+    border: 1px solid black;      /*displayed a box for the list content to be held in*/
     background-color: blueviolet;
     height: 2em;
     width: auto;
 }
-.article-header{    /*contains the large main text defining it's properties*/
+.article-header{                    /*contains the large main text defining it's properties*/
     text-align: center; 
     font-size: 3em;
     font-weight: bold;
@@ -48,22 +53,20 @@ nav{
     border: 1px solid black;    /*parent container of feature image and the h3 element*/
     background-color: green;
     overflow: hidden;
-    
+ 
 }
-.feature-img{ /*image is clipped by its parent element and its excessive content hidden*/
+.feature-img{           /*image is clipped by its parent element and its excessive content hidden*/
     background-color: #333;
     position: relative;
     height: 15em;
-    width: auto;
-    margin-left: 5em;
-    margin-right: 5em;
+    width: 50em;
     overflow: hidden;   /*hide clipped content*/
     border: solid red;
 }
-.feature-img-clipped{ /*clipped image is reposisioned to the center by defining position relative*/
+.feature-img-clipped{   /*clipped image is reposisioned to the center by defining position relative*/
     position: relative;
-    scale: 80%; /*image has to be scaled down to able to see main content*/
-    top: -100%; /*the position center is not the desired final position. It needs to be manipulated*/
+    scale: 80%;         /*image has to be scaled down to able to see main content*/
+    top: -100%;         /*the position center is not the desired final position. It needs to be manipulated*/
     left: -20%;
 }
 .rows{
@@ -71,30 +74,41 @@ nav{
     width: 100%; 
 }
 .column{
-    border: 0.2em solid blue;
-    float: left;    /*creating columns from left to right*/
+    float: left;        /*creating columns from left to right*/
     padding: 0.5em;
-    width: 48%;     /*as there are 2 columns we want to split the space evenly*/
-    height: auto;  /*defining the column size. it will change with differnt size*/
+    width: 48%;         /*as there are 2 columns we want to split the space evenly*/
+    height: auto;       /*defining the column size. it will change with differnt size*/
     background-color:red;
-    
 }
-.column-img1{/*the first column image parts which is clipped away will be hidden*/
+.column-img1{           /*the first column image parts which is clipped away will be hidden*/
     overflow: hidden;
 
 }
-.column-img1-clipped{/*image settings*/
+.column-img1-clipped{   /*image 1 with clipped settings*/
     background-color: #333;
-    width: 25em;
+    width: 25em;        /*both image 1 and 2 within the columns have the same size*/
     height: auto;
     border-radius: 5px;
 }
-.column-img2{
+.column-img2{           /*the first column image parts which is clipped away will be hidden*/
     overflow: hidden;
 }
-.column-img2-clipped{/*image settings*/
+.column-img2-clipped{   /*image settings*/
     background-color: #333;
-    width: 25em;
-    height: auto;
+    width: 25em;        /*both image 1 and 2 within the columns have the same size*/
+    height: auto;   
     border-radius: 5px;
+}
+footer{
+    background-color: sandybrown;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;            /* Footer height */
+}
+.footer-img{
+    margin-top: 1em;
+    align-content: center;
+    height: 5em;
+    width: auto;
 }
