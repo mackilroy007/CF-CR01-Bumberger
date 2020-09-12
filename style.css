@@ -1,8 +1,8 @@
 * {/*this is our css reset*/
-    margin: auto;
+    margin: auto;       /*under normal curcumstances it should be 0, however it is conflicting with .feature-img-clipped*/
     padding: 0;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;  /*google font*/
     }
 body{                           /*defining body size for the perminent placement of the footer*/
     position: relative;
@@ -10,7 +10,7 @@ body{                           /*defining body size for the perminent placement
     padding-bottom: 8rem;    /* Footer height */
 }
 header{                         /*header dimensions need to be defined so that we can display the image within it*/
-    background-color: aqua;
+    background-color: #CDB0B0;
     height: 10em;
     width: auto;
     top: 0em;
@@ -19,9 +19,7 @@ header{                         /*header dimensions need to be defined so that w
     position: absolute;
     top: 3em;                   /*fixed the position of the headers text left and 10% of the left border*/
     text-align: left;
-    border: 1px solid black;
     margin-left: 10%;
-    background-color: lightblue;
         }
 .header-img{                    /*the image will only display within the header*/
     position: absolute;         /*forcing the logo image to stay at the top right corner*/
@@ -38,9 +36,8 @@ nav > ul, li{                   /*only to the ul an li within nav*/
     font-size: 1.2em;               /*incresing the font size */
     font-weight: bold;
 }
-nav{
-    border: 1px solid black;      /*displayed a box for the list content to be held in*/
-    background-color: blueviolet;
+nav{      /*displayed a box for the list content to be held in*/
+    background-color: #C25647;
     height: 2em;
     width: auto;
 }
@@ -49,9 +46,7 @@ nav{
     font-size: 3em;
     font-weight: bold;
 }
-.feature{
-    border: 1px solid black;    /*parent container of feature image and the h3 element*/
-    background-color: green;
+.feature{               /*parent container of feature image and the h3 element*/
     overflow: hidden;
  
 }
@@ -61,7 +56,6 @@ nav{
     height: 15em;
     width: 50em;
     overflow: hidden;   /*hide clipped content*/
-    border: solid red;
 }
 .feature-img-clipped{   /*clipped image is reposisioned to the center by defining position relative*/
     position: relative;
@@ -78,7 +72,7 @@ nav{
     padding: 0.5em;
     width: 48%;         /*as there are 2 columns we want to split the space evenly*/
     height: auto;       /*defining the column size. it will change with differnt size*/
-    background-color:red;
+
 }
 .column-img1{           /*the first column image parts which is clipped away will be hidden*/
     overflow: hidden;
@@ -100,7 +94,7 @@ nav{
     border-radius: 5px;
 }
 footer{
-    background-color: sandybrown;
+    background-color: #CDB0B0;
     position: absolute;
     bottom: 0;
     width: 100%;
