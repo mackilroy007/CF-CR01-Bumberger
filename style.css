@@ -1,4 +1,4 @@
-* {/*this is our css reset*/
+* {/*this is the css reset*/
     margin: auto;       /*under normal curcumstances it should be 0, however it is conflicting with .feature-img-clipped*/
     padding: 0;
     text-align: center;
@@ -6,8 +6,8 @@
     }
 body{                           /*defining body size for the perminent placement of the footer*/
     position: relative;
-    min-height: 70em;
-    padding-bottom: 8rem;    /* Footer height */
+    min-height: 70em;       
+    padding-bottom: 8rem;       /* Footer height */
 }
 header{                         /*header dimensions need to be defined so that we can display the image within it*/
     background-color: #CDB0B0;
