@@ -59,7 +59,7 @@ nav{      /*displayed a box for the list content to be held in*/
 }
 .feature-img-clipped{   /*clipped image is reposisioned to the center by defining position relative*/
     position: relative;
-    scale: 80%;         /*image has to be scaled down to able to see main content*/
+    transform: scale(80%); /*scale: 80%; is incorrect*/         /*image has to be scaled down to able to see main content*/
     top: -100%;         /*the position center is not the desired final position. It needs to be manipulated*/
     left: -20%;
 }
